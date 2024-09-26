@@ -6,6 +6,7 @@
     <style>
         body {
             background-color: rgb(154, 236, 255);
+            font-size: 24px;
         }
 
         h1 {
@@ -13,30 +14,54 @@
             font-size: 100px;
             color: blue
         }
-
+        h2{
+            text-decoration: underline;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        .nadpis{
+            font-size: 21px;
+            text-align: center;
+            background-color: rgb(154, 236, 255);
+        }
+        .text{
+            
+            text-indent: 5px;
+            line-height: normal;
+            margin: auto;
+            padding: 0%;
+           
+            border-color: blue;
+            border-width: 5px;
+            background-color: rgb(100, 227, 255);
+        }
         table,
         th,
         td {
-            font-size: 24px;
+            
+            text-align: center;
             border: 1px solid black;
             border-collapse: collapse;
             background-color: #4796f0;
+        }
+        .link{
+            font-size: 26px;
         }
     </style>
 </head>
 
 <body>
 
-    <div style=" font-size: 21px;">
-        <div style="text-align: center;">
-
+        <div class='nadpis'>
             <img src="one_piece.jpg" width="900" alt="Logo seriálu one_piece">
             <header>
-
                 <h1><strong>One Piece</strong></h1>
-                <hr>
             </header>
+           
         </div>
+        <hr>
+        <div class="link">
         <ul>
             <li><a href="#One_Piece_svět">One Piece svět</a></li>
             <li><a href="#Luffy">Luffy</a></li>
@@ -45,8 +70,11 @@
             <li><a href="#odkazy">Důležité odkazy</a></li>
 
         </ul>
+    
+    </div>
         <hr>
         <h2 id="One_Piece_svět">One Piece svět</h2>
+        <div class="text">
         <p>
             One Piece je japonská manga a anime o chlapci jménem Luffy který se chce stát králem pirátů. Odehrává se v
             fantasy světě který je z většiny tvořen mořem s ostrovy. Přesto je celý svět rozdělován velkým kontinentem
@@ -60,6 +88,7 @@
             schopnost plavat.
 
         </p>
+    </div>
         <div style="text-align: center;">
             <img src="world.webp" alt="Obrázek světa One Piecu">
         </div>
@@ -67,7 +96,7 @@
         <h2 id="Luffy">
             <strong>Luffy</strong>
         </h2>
-
+        <div class="text">
         <p>
             Luffy je hlavní postava One Piecu. Luffy je na začátku série sedmnáctiletý hoch, který se sám vypravil
             hledat poklad One Piece, protože ten kdo
@@ -79,7 +108,7 @@
             cestu přidávají a chtějí z něj učinit krále pirátů.
 
         </p>
-
+    </div>
         <img src="luffy.jfif" alt="Obrázek Luffyho">
         <hr>
         <h2 id="Luffyho_posádka">
@@ -89,6 +118,7 @@
         <h3>
             Zoro
         </h3>
+        <div class="text">
         <p>
 
             První člověk který se k Luffymu přidá je Zoro. Zoro je šermíř jehož cílem je se stát nejlepším šermířem na
@@ -99,11 +129,13 @@
 
 
         </p>
+    </div>
         <img src="zoro.jfif" alt="Obrázek Zora">
 
         <h3>
             Nami
         </h3>
+        <div class="text">
         <p>
             Po Zorovi se k Luffymu přidá Nami. Nami je navigátorka a tedy kritická součást posádky. Jejím životním snem
             je
@@ -113,10 +145,12 @@
             nutí je se u ní zadlužit.
 
         </p>
+    </div>
         <img src="nami.jpg" width="225" alt="Obrázek Nami">
         <h3>
             Ussop
         </h3>
+        <div class="text">
         <p>
             Ussop je ostřelovač který používá prak. K Luffymu se přidává aby se stal statečným válečníkem. Při jeho
             příchodu dostává posádka od Ussopovi kamarádky svojí loď (do té doby měly pouze malou loďku, nyní mají
@@ -124,10 +158,12 @@
             neshodám s Luffym ale poté se opět k Luffymu přidá.
             Ussop má v oblibě velmi často lhát a vymýšlet si.
         </p>
+    </div>
         <img src="ussop.webp" width="225" alt="Obrázek Ussopa">
         <h3>
             Sanji
         </h3>
+        <div class="text">
         <p>
             Sanji je velmi schopný kuchař který pracuje v restauraci na moři. Jednoho dne chce najít "All Blue" což je
             místo kde se dají najít všechny ryby světa. Pro dosáhnutí tohoto cíle se přidá k Luffymu a stane se kuchařem
@@ -136,20 +172,23 @@
             Sanji je vyloženě gentleman který by za žádných okolnosti neublížil ženě. Zároveň projevuje náklonnost každé
             ženě kterou potká.
         </p>
+    </div>
         <img src="sanji.jfif" width="225" alt="Obrázek Sanjiho">
         <h3>
             Další postavy
         </h3>
+        <div class="text">
         <p>
             K posádce se přidaly i další postavy, ale ty zde již jmenovat nebudu. Popisuji pouze postavy které s Luffym
             vpluly do "Grand Line".
         </p>
+    </div>
         <img src="straw_hats.avif" alt="Obrázek celé posádky">
         <hr>
         <h2 id="Kapitoly">
             Kapitoly v kterých se dané postavy připojily k posádce
         </h2>
-
+<div class="table">
         <table>
             <tr>
                 <th>Postava</th>
@@ -159,7 +198,7 @@
                 <th>Ussop</th>
                 <th>Sanji</th>
             </tr>
-            <tr style="text-align: center;">
+            <tr>
                 <td>Kapitola</td>
                 <td>1</td>
                 <td>5</td>
@@ -167,7 +206,7 @@
                 <td>23</td>
                 <td>43</td>
             </tr>
-            <tr style="text-align: center;">
+            <tr >
                 <td>Dodatek</td>
                 <td>---</td>
                 <td>---</td>
@@ -177,7 +216,9 @@
                 <td>Sanji kvůli rodinným důvodům odešel z posádky a opět se připojil v kapitole 856</td>
             </tr>
         </table>
+    </div>
         <hr>
+        <div class="link">
         <h2 id="odkazy">
             Důležité odkazy
         </h2>
@@ -186,6 +227,8 @@
         <p></p>
         <a href="https://mangaplus.shueisha.co.jp/titles/100020"> Oficiální manga online</a>
     </div>
+    <hr>
+    <img src="one-piece-pixel.gif" style="width:50%; " alt="Luffyho gif">
 </body>
 
 
