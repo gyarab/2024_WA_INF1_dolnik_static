@@ -53,6 +53,7 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
     background-color: #4796f0;
+    background-image: url('bckgrnd.png');
 }
 img{
     border-radius: 15%;
