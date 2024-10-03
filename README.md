@@ -1,1 +1,1 @@
-# 2024_WA_INF1_dolnik_static
+# Toto je repozitíř Jana Dolníka. Vkládám sem svoje domáíc úkoly pro Webové aplikace.
