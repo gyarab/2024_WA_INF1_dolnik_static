@@ -53,12 +53,12 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
     background-color: #4796f0;
-    background-image: url('bckgrnd.png');
+   
 }
 img{
     border-radius: 15%;
     padding:25px;
-    
+    background-image: url('bckgrnd.png');
 }
 .link{
     font-size: 26px;
