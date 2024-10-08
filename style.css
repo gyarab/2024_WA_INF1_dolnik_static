@@ -69,4 +69,28 @@ li >a{
 #odkazy{
     font-size: 40px;
 }
-
+.posadka{
+    display: flex;
+    flex-wrap: wrap;
+}
+.posadka .posadka{
+    box-sizing: border-box;
+}
+@media all and (max-width:1920px){
+    .posadka .postava{
+        flex-basis: 25%;
+    }
+    
+}
+@media all and (max-width:1130px){
+    .posadka .postava{
+        flex-basis: 50%;
+    }
+    
+}
+@media all and (max-width:580px){
+    .posadka .postava{
+        flex-basis: 100%;
+    }
+    
+}
