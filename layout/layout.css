@@ -1,6 +1,7 @@
 body, h1 {
     margin: 0;
     padding: 0;
+    padding-top: 100px;
 }
 header  {
     background-color: hsl(280, 90%, 90%);
@@ -42,11 +43,13 @@ header h1 {
     padding: 10px;
 }
 .container .item p {
-    text-indent: 2em;
-    margin: 0;
-    padding: 10px;
+    position:absolute;   
+    left:0;
+    right:0;
+    display: none;
 }
-.container .item:nth-child(1) h2 {  background-color: hsl(100, 90%, 20%); }
+.container .item 
+.container .item:nth-child(1) h2 {  background-color: hsl(100, 90%, 20%);}
 .container .item:nth-child(1) p {   background-color: hsl(100, 90%, 90%); }
 .container .item:nth-child(2) h2 {  background-color: hsl(190, 90%, 20%); }
 .container .item:nth-child(2) p {   background-color: hsl(190, 90%, 90%); }
