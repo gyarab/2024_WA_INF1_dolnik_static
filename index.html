@@ -1,80 +1,62 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>JS TEST</title>
+    <title>JS test</title>
     <style>
-        .neco{
-           
-            background-color: aqua;
+        .item {
+            background-color: aliceblue;
+            border: 1px solid blue;
+            padding: 10px;
+            margin: 10px;
         }
     </style>
 </head>
-
 <body>
-    <div id="test">
-
-    </div>
+    <input type="button" id="tlacitko" value="TEST"/>
+    <input type="text" id="vstup" value=""/>
+    <div id="test"></div>
     <script>
-        console.log("Hello world");
-        let a = 2;
-        const b = "3";
-
-        console.log(typeof (a));
-        console.log(typeof (b));
-        console.log(a + b);
-        console.log(a + a);
-        a = 7;
-        console.log(a + a);
-        let el = document.getElementById('test');
-        el.innerHTML = "Hello world";
-        el.style.backgroundColor = "red";
-        let arr = ["jedna", "dva", "tri"];
-
-        for(let i=0;i<arr.length;i++){
-            console.log(i+": "+arr[i]);
+        function remove(element) {
+            element.parentNode.removeChild(element);
         }
-        
-        for(let i=0;i<arr.length;i++){
-            let div =document.createElement("div");
-        div.innerHTML=arr[i];
-        div.classList.add("neco");
-        el.appendChild(div);
-        }
-        let obj ={
-            vlastnost:"hodnota",
-            jina:123
-        }
-        console.log(obj.vlastnost);
-        console.log(obj["jina"]);
-        for (a in obj){
-            console.log(a);
-        }
-        function test(arg){
-            console.log(arg);
-            return 1;
-        }
-        console.log(test("pokus"));
-
-        let test2 =(arg)=> {
-            console.log(arg);
-            return 1;
-        }
-        let even=(num)=> {
-            return num%2==0
-        }
-        arr=[1,2,3,4,5,6,7,8,9];
-        console.log(arr.filter(even));
-        class Test{
-            constructor(a,b){
-                this.a=a;
-                this.b=b;
-            }
+        function addBefore(elemnt){
             
         }
-        let x = new Test(1,2);
-            console.log(x);
+        function novyElement(event) {
+            console.log("Hello world");
+            let el = document.getElementById("test");
+
+            let div = document.createElement("div");
+            let inp =document.getElementById("vstup");
+            div.classList.add("item");
+            div.innerHTML=inp.value;
+
+            let divClose = document.createElement("div");
+            divClose.innerHTML = "❌";
+            div.addEventListener("click", (event) => {
+                remove(div);
+            })
+            div.appendChild(divClose);
+            
+            let divBefore = document.createElement("div");
+            divBefore.innerHTML="➕";
+            div.addEventListener("click", (event)=>{
+                addBefore(div);
+            })
+            div.appendChild(divBefore);
+            el.appendChild(div);
+            if(before){
+                el.insertBefore(div, before);
+            }else{
+                el.appendChild(div);
+            }
+        }
+
+        let tlacitko=document.getElementById("tlacitko");
+        tlacitko.addEventListener("click", (event)=>{novyElement()
+
+        })
+
     </script>
 </body>
-
 </html>
